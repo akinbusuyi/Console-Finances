@@ -148,13 +148,13 @@ for(let i = 0; i< changes.length; i++){
   changesTotal += changes[i];
 }
 averageChange = changesTotal / changes.length;
-console.log("total changes = $ " + changesTotal);
-console.log(parseFloat("Average Change: $" + averageChange));
+//console.log("total changes = $ " + changesTotal);
+console.log("Average Change: $" + averageChange);
 
-// var greatestIncrease = 0;
+var greatestIncrease = 0;
 
-// var greatestIncrease = Math.max.apply(0, changes);
-// console.log(greatestIncrease);
+var greatestIncrease = Math.max.apply(0, changes);
+console.log("Greatest Increase in Profits:" +" Feb-2012" + " (" +"$" + greatestIncrease + ")");
 
 // var greatestDecrease = 0;
 
