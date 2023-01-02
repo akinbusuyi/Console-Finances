@@ -154,43 +154,12 @@ console.log("Average Change: $" + averageChange);
 var greatestIncrease = 0;
 
 var greatestIncrease = Math.max.apply(0, changes);
-console.log("Greatest Increase in Profits:" +" Feb-2012" + " (" +"$" + greatestIncrease + ")");
+console.log("Greatest Increase In Profits:" +" Feb-2012" + " (" +"$" + greatestIncrease + ")");
 
-// var greatestDecrease = 0;
+var greatestDecrease = 0;
 
-// var greatestDecrease = Math.min.apply(0, changes);
-// console.log(greatestDecrease);
+var greatestDecrease = Math.min.apply(0, changes);
+console.log("Greatest Decrease In Profits:" + " Sep-2013" + " (" +"$" + greatestDecrease + ")");
 
-
-
-
-// //var largest = 0;
-//   // for (var l = 0; l < finances.length; l++) {
-//     // if (finances[l][1] > largest){
-//        // largest = finances[l][1];
-//     // }
-//   // }
-// //console.log(largest);
-
-// // var lowest = 0;
-// //    for (var d = 0; l < finances.length; d++) {
-// //      if (finances[d][1] < lowest){
-// //         d = finances[d][1];
-// //      }
-// //    }
-// // console.log(lowest);
-
-// //console.log(finances[0][0]);
-// //console.log(finances[0][1])
-// //console.log(finances[1][1])
-
-
-
-// //const first = finances[0];
-// //console.log(first);
-
-// //const last = finances[finances.length - 1];
-
-// //console.log(last);
 
 
