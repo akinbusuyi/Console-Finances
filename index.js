@@ -105,6 +105,8 @@ var finances = [
 // The greatest increase in profits (date and amount) over the entire period.
 
 // The greatest decrease in losses (date and amount) over the entire period.
+
+
 //in forloop i stand for index
 //use of .length incase the number items in the array changes 
 
@@ -112,30 +114,82 @@ var finances = [
 
 console.log("Financial Analysis")
 console.log("----------------------------")
+
+//use of .length incase the number items in the array changes 
+
 console.log("Total Months: " + finances.length)
+
+
+
 var totalSum = 0;
+
 for (let i = 0; i < finances.length; i++){
-var currentMonth = finances [i]
-console.log(currentMonth)
+totalSum += finances[i][1];
 }
+// console.log(totalSum);
+
 console.log( "Total: $" + totalSum)
-console.log(finances[0][0])
-console.log(finances[0][1])
-console.log(finances[1][1])
+
+// var change = 0;
+// var changes = []
+
+// for ( let i=1; i< finances.length; i++){
+//   change = finances[i][1] - finances[i-1][1];
+//   changes.push(change);
+// }
+
+
+// var avaerage = 0;
+// changesTotal = 0;
+// var averageChange = 0;
+
+// for(let i = 0; i< changes.length; i++){
+//   changesTotal += changes[i];
+// }
+// averageChange = changesTotal / changes.length;
+// console.log("total changes = $ " + changesTotal);
+// console.log(parseFloat("Average Change: $" + averageChange));
+
+// var greatestIncrease = 0;
+
+// var greatestIncrease = Math.max.apply(0, changes);
+// console.log(greatestIncrease);
+
+// var greatestDecrease = 0;
+
+// var greatestDecrease = Math.min.apply(0, changes);
+// console.log(greatestDecrease);
 
 
 
-const first = finances[0];
-console.log(first);
 
-const last = finances[finances.length - 1];
+// //var largest = 0;
+//   // for (var l = 0; l < finances.length; l++) {
+//     // if (finances[l][1] > largest){
+//        // largest = finances[l][1];
+//     // }
+//   // }
+// //console.log(largest);
 
-console.log(last);
+// // var lowest = 0;
+// //    for (var d = 0; l < finances.length; d++) {
+// //      if (finances[d][1] < lowest){
+// //         d = finances[d][1];
+// //      }
+// //    }
+// // console.log(lowest);
 
-//let sum = 0;
+// //console.log(finances[0][0]);
+// //console.log(finances[0][1])
+// //console.log(finances[1][1])
 
-//for (const value of first) {
-// sum += value;
-//}
 
-//console.log(sum);
+
+// //const first = finances[0];
+// //console.log(first);
+
+// //const last = finances[finances.length - 1];
+
+// //console.log(last);
+
+
