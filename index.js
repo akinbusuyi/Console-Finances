@@ -130,25 +130,26 @@ totalSum += finances[i][1];
 
 console.log( "Total: $" + totalSum)
 
-// var change = 0;
-// var changes = []
+var change = 0;
+var changes = []
 
-// for ( let i=1; i< finances.length; i++){
-//   change = finances[i][1] - finances[i-1][1];
-//   changes.push(change);
-// }
+//creating a new variable in order to enable changes easier
 
+for ( let i=1; i< finances.length; i++){
+  change = finances[i][1] - finances[i-1][1];
+  changes.push(change);
+}
 
-// var avaerage = 0;
-// changesTotal = 0;
-// var averageChange = 0;
+var avaerage = 0;
+changesTotal = 0;
+var averageChange = 0;
 
-// for(let i = 0; i< changes.length; i++){
-//   changesTotal += changes[i];
-// }
-// averageChange = changesTotal / changes.length;
-// console.log("total changes = $ " + changesTotal);
-// console.log(parseFloat("Average Change: $" + averageChange));
+for(let i = 0; i< changes.length; i++){
+  changesTotal += changes[i];
+}
+averageChange = changesTotal / changes.length;
+console.log("total changes = $ " + changesTotal);
+console.log(parseFloat("Average Change: $" + averageChange));
 
 // var greatestIncrease = 0;
 
